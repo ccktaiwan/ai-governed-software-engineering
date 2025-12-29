@@ -1,3 +1,16 @@
+Authority and Dependency Declaration
+
+This document is a subordinate governance specification under the authority of
+governance/governance-formalization/governance-index-v0.2.md.
+
+Its validity, interpretation, and enforcement scope are strictly bounded by
+the Governance Index. Any rule, constraint, or boundary defined in this document
+is non-authoritative unless explicitly referenced by the Governance Index.
+
+In case of conflict, ambiguity, or version divergence, the Governance Index
+shall prevail as the single source of truth (SSOT).
+
+
 Prospera OS
 AI Participation Boundary v0.2
 
