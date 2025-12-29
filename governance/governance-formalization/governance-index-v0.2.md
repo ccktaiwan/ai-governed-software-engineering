@@ -1,3 +1,12 @@
+This document is the authoritative governance index for version v0.2.
+
+All governance specifications under this directory MUST be interpreted
+through this index. No governance rule, boundary, or constraint is valid
+unless it is referenced here.
+
+This index serves as the single source of truth (SSOT) for governance
+formalization in AI-governed software engineering.
+
 Prospera OS
 Governance Index and Cross-Reference Map v0.2
 
