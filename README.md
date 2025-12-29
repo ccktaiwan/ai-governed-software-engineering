@@ -21,6 +21,12 @@ This leads to recurring problems:
 
 This repository documents an alternative approach.
 
+Recommended reading order:
+1. README.md (context and intent)
+2. RELEASES.md (version scope and boundaries)
+3. governance/governance-formalization/governance-index-v0.2.md
+
+
 ## The Five-Phase Engineering Model
 
 1. Problem Framing
