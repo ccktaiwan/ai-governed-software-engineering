@@ -6,6 +6,7 @@ Status: Draft
 Owner: Prospera Architecture Group
 Category: Governance
 
+
 This document is the authoritative governance index for version v0.2.
 
 All governance specifications under this directory MUST be interpreted
@@ -24,15 +25,18 @@ Its purpose is to provide a single navigable entry point for governance specific
 
 This index establishes the governance layer’s single source of truth for v0.2.
 
+
 Scope
 
 This index applies to all governance specifications defined under Governance Formalization v0.2.
 
 It does not introduce new governance rules and does not modify the content of referenced documents.
 
+
 Governance Document Set
 
 The following documents constitute Governance Formalization v0.2.
+
 
 3.1 AI Participation Boundary
 
@@ -54,6 +58,7 @@ Enforcement and Escalation Rules
 
 Future Operational Playbooks
 
+
 3.2 Authority Level Matrix
 
 Document:
@@ -70,7 +75,8 @@ Referenced By:
 
 Enforcement and Escalation Rules
 
-Audit and Traceability requirements
+Audit and traceability requirements
+
 
 3.3 Enforcement and Escalation Rules
 
@@ -92,6 +98,28 @@ Release governance
 
 Incident response procedures
 
+
+3.4 Engineering Phase Boundary Specification
+
+Document:
+
+governance/governance-formalization/engineering-phase-boundary-v0.2.md
+
+Purpose:
+
+Defines phase-based applicability boundaries for governance specifications
+
+Clarifies when governance is advisory, binding, enforceable, or auditable
+
+Referenced By:
+
+Governance audits
+
+Lifecycle compliance reviews
+
+Future operational and system-level specifications
+
+
 Cross-Reference Principles
 
 All governance documents adhere to the following cross-reference rules:
@@ -103,6 +131,7 @@ Circular dependencies are permitted only at the index level
 No governance document may override another without explicit version increment
 
 All cross-references must specify document name and version
+
 
 Authority Hierarchy
 
@@ -116,7 +145,10 @@ Authority Level Matrix v0.2
 
 AI Participation Boundary v0.2
 
+Engineering Phase Boundary Specification v0.2
+
 This hierarchy applies solely for governance interpretation and audit resolution.
+
 
 Audit and Review Usage
 
@@ -128,9 +160,12 @@ Authority traceability checks
 
 AI participation boundary audits
 
+Engineering phase applicability audits
+
 Incident and escalation reviews
 
 Any governance review conducted without reference to this index is considered incomplete.
+
 
 Versioning and Stability
 
@@ -146,9 +181,11 @@ Governance Body approval
 
 The index must always reflect the complete and current governance document set.
 
+
 File Location
 
 governance/governance-formalization/governance-index-v0.2.md
+
 
 ────────────────────────────────────────
 End of Document
