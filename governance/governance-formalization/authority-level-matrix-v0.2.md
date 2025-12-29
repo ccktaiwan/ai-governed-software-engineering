@@ -6,6 +6,22 @@ Status: Draft
 Owner: Prospera Architecture Group
 Category: Governance
 
+## Authority and Governance Binding
+
+This document defines authority levels for AI and human actors.
+It is a subordinate governance specification.
+
+This document is NOT authoritative on its own.
+All authority definitions are valid only when referenced by
+`governance-index-v0.2.md`.
+
+In case of conflict, ambiguity, or omission, the governance index
+takes precedence.
+
+This document MUST NOT introduce new authority levels,
+decision rights, or escalation paths outside those enumerated
+in the governance index.
+
 Purpose
 
 This document defines the formal authority allocation between human actors and AI systems across the Prospera OS engineering lifecycle.
