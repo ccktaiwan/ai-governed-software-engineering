@@ -1,4 +1,4 @@
-# Prospera OS Case Study
+Prospera OS Case Study
 ## Architecture-First Development with Governed AI
 
 ### 1. Purpose
