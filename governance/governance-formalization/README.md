@@ -8,3 +8,5 @@ enforcement mechanisms, and audit escalation models.
 
 This folder supersedes governance-formalization-v0.2.md by decomposing governance
 concerns into modular, reviewable specifications.
+
+The authoritative entry point for this module is governance-index-v0.2.md.
