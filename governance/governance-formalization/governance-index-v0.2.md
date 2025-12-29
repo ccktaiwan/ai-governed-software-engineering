@@ -1,3 +1,11 @@
+Prospera OS
+Governance Index and Cross-Reference Map v0.2
+
+File: governance/governance-formalization/governance-index-v0.2.md
+Status: Draft
+Owner: Prospera Architecture Group
+Category: Governance
+
 This document is the authoritative governance index for version v0.2.
 
 All governance specifications under this directory MUST be interpreted
@@ -7,13 +15,6 @@ unless it is referenced here.
 This index serves as the single source of truth (SSOT) for governance
 formalization in AI-governed software engineering.
 
-Prospera OS
-Governance Index and Cross-Reference Map v0.2
-
-File: governance/governance-formalization/governance-index-v0.2.md
-Status: Draft
-Owner: Prospera Architecture Group
-Category: Governance
 
 Purpose
 
