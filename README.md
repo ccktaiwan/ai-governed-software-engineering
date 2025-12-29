@@ -1,3 +1,13 @@
+## Repository Role
+
+This repository is a reference implementation and engineering whitepaper
+demonstrating AI-governed software engineering concepts.
+
+It is NOT a source of governance authority.
+
+All canonical governance definitions, interpretation rules, and semantic
+baselines are defined exclusively in the `prospera-os` repository.
+
 # AI-Governed Software Engineering
 
 This repository contains an engineering whitepaper and playbook describing
