@@ -6,6 +6,28 @@ Status: Draft
 Owner: Prospera Architecture Group
 Category: Governance
 
+## Enforcement and Escalation Binding
+
+This document defines enforcement signals and escalation boundaries
+for governance violations in AI-governed software engineering.
+
+This document is a subordinate governance specification.
+
+It is NOT authoritative on its own.
+All enforcement and escalation rules are valid only when referenced by
+`governance-index-v0.2.md`.
+
+This document does NOT define operational procedures, response playbooks,
+incident handling steps, or tooling integrations.
+
+It defines:
+- When governance violations MUST be escalated
+- What authority level escalation targets
+- Which classes of violations cannot be auto-resolved by AI systems
+
+In case
+
+
 Purpose
 
 This document defines the enforcement and escalation mechanisms that govern compliance with Prospera OS governance specifications.
