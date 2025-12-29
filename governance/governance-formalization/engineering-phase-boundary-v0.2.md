@@ -42,6 +42,50 @@ Phase 5: Deployment, Operation, and Evolution
 
 Activities include release, monitoring, incident handling, iteration, and controlled system evolution.
 
+Governance Activation by Engineering Phase
+
+Governance applicability varies by engineering phase. This document does not alter governance rules, but defines when existing governance specifications become applicable, enforceable, or auditable.
+
+Phase 1: Problem Definition and Intent Framing
+
+Governance is advisory and boundary-defining in this phase.
+
+AI participation boundaries apply to problem framing, requirement interpretation, and intent articulation.
+
+No enforcement or escalation mechanisms are triggered at this phase.
+
+Phase 2: Architecture and Design
+
+Governance becomes structurally binding in this phase.
+
+Authority allocation, AI participation constraints, and non-delegable decisions must conform to governance specifications.
+
+Violations may be identified but are not escalated unless propagated downstream.
+
+Phase 3: Implementation and Construction
+
+Governance is operationally active in this phase.
+
+AI participation boundaries and authority level definitions are enforceable.
+
+Violations may trigger enforcement mechanisms defined in Enforcement and Escalation Rules.
+
+Phase 4: Validation, Review, and Audit
+
+Governance is fully auditable and reviewable in this phase.
+
+All governance specifications apply for compliance verification, traceability, and authority confirmation.
+
+Escalation and remediation procedures are mandatory where violations are confirmed.
+
+Phase 5: Deployment, Operation, and Evolution
+
+Governance governs change control, incident response, and system evolution.
+
+All modifications must preserve governance compliance unless explicitly re-scoped by versioned governance updates.
+
+This phase is subject to continuous governance monitoring and audit readiness.
+
 
 It specifies at which engineering phases governance rules apply, escalate, or defer, without introducing new authority, enforcement, or AI behavior rules.
 
