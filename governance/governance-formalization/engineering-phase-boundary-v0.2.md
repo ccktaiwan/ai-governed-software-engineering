@@ -120,6 +120,14 @@ File Location
 
 governance/governance-formalization/engineering-phase-boundary-v0.2.md
 
+Extended Description
+
+This document defines phase-based applicability boundaries for governance specifications.
+It does not introduce new authority, enforcement logic, or AI behavior rules.
+
+It must not be interpreted as an execution model, process definition,
+or implementation requirement.
+
 ────────────────────────────────────────
 End of Document
 ────────────────────────────────────────
