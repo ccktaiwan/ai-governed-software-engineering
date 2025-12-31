@@ -1,13 +1,3 @@
-This document is a subordinate governance specification.
-
-It is NOT authoritative on its own.
-All enforcement and escalation rules defined here are valid
-only when referenced by `governance-index-v0.2.md`.
-
-In case of conflict, ambiguity, or omission,
-the governance index takes precedence.
-
-
 Prospera OS
 Governance Enforcement and Escalation Rules v0.2
 
@@ -16,99 +6,55 @@ Status: Draft
 Owner: Prospera Architecture Group
 Category: Governance
 
-## Enforcement and Escalation Binding
-
-This document defines enforcement signals and escalation boundaries
-for governance violations in AI-governed software engineering.
-
-This document is a subordinate governance specification.
-
-It is NOT authoritative on its own.
-All enforcement and escalation rules are valid only when referenced by
-`governance-index-v0.2.md`.
-
-This document does NOT define operational procedures, response playbooks,
-incident handling steps, or tooling integrations.
-
-It defines:
-- When governance violations MUST be escalated
-- What authority level escalation targets
-- Which classes of violations cannot be auto-resolved by AI systems
-
-In case
-
-
 Purpose
 
-This document defines the enforcement and escalation mechanisms that govern compliance with Prospera OS governance specifications.
+This document defines the enforcement and escalation rules governing compliance with Prospera OS governance specifications.
 
-It establishes how violations are detected, how authority is restored, and how escalation is performed to ensure governance integrity is preserved under all conditions.
+Its purpose is to specify when governance violations must trigger enforcement actions and escalation, ensuring authority integrity and accountability preservation across AI-governed software engineering activities.
 
 Scope
 
-These rules apply to all governance-controlled activities, including:
+These rules apply to all governance-controlled activities within Prospera OS v0.2, including architecture definition, governance specification management, documentation generation, code generation and review, operational execution, and AI-assisted activities.
 
-Architecture and system design
+This document does not define operational procedures, response playbooks, tooling integrations, or incident handling workflows.
 
-Governance rule definition and modification
+Authority and Precedence
 
-Documentation and specification generation
+This document is a subordinate governance specification.
 
-Code generation, review, and release
+It is not authoritative on its own.
 
-Operational execution and maintenance
+All enforcement and escalation rules defined herein are valid only when referenced by governance-index-v0.2.md.
 
-AI-assisted activities across all layers
+In case of conflict, ambiguity, or omission, the Governance Index takes precedence.
 
 Enforcement Triggers
 
-Enforcement actions are triggered when any of the following conditions occur:
+Enforcement actions are triggered when governance violations are detected.
 
-AI systems exceed their permitted participation mode
-
-AI outputs are treated as authoritative decisions
-
-Human review is omitted where required
-
-Governance boundaries are violated
-
-Authority ownership is ambiguous or untraceable
-
-Kernel or governance constraints are bypassed
+Triggers include, but are not limited to, AI systems exceeding permitted participation boundaries, AI outputs being treated as authoritative decisions, omission of required human review, violation of governance boundaries, ambiguous or untraceable authority ownership, or bypassing kernel or governance constraints.
 
 Triggers may be identified through automated checks or human reporting.
 
 Violation Classification
 
-Violations are classified into three severity levels.
+Violations are classified by severity for enforcement determination.
 
-4.1 Minor Violation
+Minor Violation
 
-Formatting or documentation inconsistencies
-
-Non-authoritative AI suggestions improperly referenced
-
-Missing attribution without authority impact
+Minor violations include formatting or documentation inconsistencies, non-authoritative AI suggestions being improperly referenced, or missing attribution without authority impact.
 
 Minor violations require correction but do not halt progress.
 
-4.2 Major Violation
+Major Violation
 
-AI-generated artifacts merged without required human review
-
-Authority ambiguity affecting decisions
-
-Governance rules partially bypassed
+Major violations include AI-generated artifacts merged without required human review, authority ambiguity affecting decisions, or partial bypassing of governance rules.
 
 Major violations require immediate remediation and governance review.
 
-4.3 Critical Violation
+Critical Violation
 
-AI systems making or enforcing decisions
-
-Kernel or governance constraints altered without approval
-
-Release actions executed without governance authorization
+Critical violations include AI systems making or enforcing decisions, modification of kernel or governance constraints without approval, or release actions executed without governance authorization.
 
 Critical violations immediately invalidate affected outputs.
 
@@ -116,89 +62,57 @@ Enforcement Actions
 
 Enforcement actions are proportional to violation severity.
 
-5.1 Minor Violation Response
+Minor Violation Response
 
-Issue logged
+The issue is logged, correction is required, and the responsible human is notified.
 
-Correction required
+Major Violation Response
 
-Responsible human notified
+Affected artifacts are flagged as non-authoritative, work is paused pending review, the Governance Body is notified, and root cause analysis is required.
 
-5.2 Major Violation Response
+Critical Violation Response
 
-Affected artifacts flagged as non-authoritative
-
-Work paused pending review
-
-Governance Body notified
-
-Root cause analysis required
-
-5.3 Critical Violation Response
-
-Immediate halt of affected processes
-
-Rollback to last valid state
-
-Governance Body escalation
-
-Mandatory corrective action plan
+Affected processes are halted immediately, rollback to the last valid state is required, the Governance Body is escalated, and a mandatory corrective action plan is enforced.
 
 Escalation Path
 
-Escalation follows a deterministic path.
+Escalation follows a deterministic authority path.
 
-Responsible Human Engineer
+Responsible Human Engineer.
 
-Human Architect
+Human Architect.
 
-Governance Body
+Governance Body.
 
 Escalation must never be handled by AI systems.
 
-If escalation reaches the Governance Body, its decision is final.
+Decisions made at the Governance Body level are final.
 
 Restoration of Authority
 
-After enforcement actions:
-
-Human authority must be explicitly reaffirmed
-
-Corrective changes must be reviewed and approved
-
-AI participation boundaries must be revalidated
-
-Traceability records must be updated
+Following enforcement actions, human authority must be explicitly reaffirmed, corrective changes must be reviewed and approved, AI participation boundaries must be revalidated, and traceability records must be updated.
 
 No work may resume until authority restoration is confirmed.
 
 Audit and Traceability
 
-All enforcement and escalation actions must be recorded, including:
+All enforcement and escalation actions must be recorded.
 
-Violation type and severity
-
-Trigger source
-
-Actions taken
-
-Human decision owners
-
-Final resolution
+Records include violation type and severity, trigger source, actions taken, accountable human roles, and final resolution.
 
 These records form part of the governance audit trail.
 
 Non-Negotiable Principles
 
-Governance enforcement overrides productivity
+Governance enforcement overrides productivity considerations.
 
-Human authority is never optional
+Human authority is never optional.
 
-AI systems may not override enforcement outcomes
+AI systems may not override enforcement outcomes.
 
-Ambiguity defaults to escalation
+Ambiguity defaults to escalation.
 
-Silence is not consent
+Silence is not consent.
 
 Violation of these principles invalidates system legitimacy.
 
@@ -206,7 +120,7 @@ Versioning
 
 This document is aligned with Governance Formalization v0.2.
 
-Any change to enforcement or escalation rules requires Governance Body approval and explicit version increment.
+Any modification to enforcement or escalation rules requires Governance Body approval and explicit version increment.
 
 File Location
 
