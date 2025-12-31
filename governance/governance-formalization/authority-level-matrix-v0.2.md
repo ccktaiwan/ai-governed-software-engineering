@@ -1,215 +1,146 @@
-This document is a subordinate governance specification.
-
-It is NOT authoritative on its own.
-All authority definitions defined here are valid
-only when referenced by `governance-index-v0.2.md`.
-
-In case of conflict, ambiguity, or omission,
-the governance index takes precedence.
-
 Prospera OS
 Authority Level Matrix v0.2
 
-File: governance/governance-formalization/authority-level-matrix-v0.2.md
+File: governance/governance-formalization/AUTHORITY_LEVEL_MATRIX-v0.2.md
 Status: Draft
 Owner: Prospera Architecture Group
 Category: Governance
 
-## Authority and Governance Binding
-
-This document defines authority levels for AI and human actors.
-It is a subordinate governance specification.
-
-This document is NOT authoritative on its own.
-All authority definitions are valid only when referenced by
-`governance-index-v0.2.md`.
-
-In case of conflict, ambiguity, or omission, the governance index
-takes precedence.
-
-This document MUST NOT introduce new authority levels,
-decision rights, or escalation paths outside those enumerated
-in the governance index.
-
 Purpose
 
-This document defines the formal authority allocation between human actors and AI systems across the Prospera OS engineering lifecycle.
+This document defines the authority level matrix for Prospera OS v0.2.
 
-It operationalizes the AI Participation Boundary by specifying which roles hold decision authority, execution responsibility, and review accountability at each stage of work.
+Its purpose is to formally allocate authority levels across defined authority types and roles using a four-level governance model, enabling deterministic interpretation, auditability, and non-delegable boundary enforcement.
 
-The matrix exists to eliminate ambiguity, prevent authority drift, and ensure governance enforcement remains deterministic.
+This document operationalizes the Authority Definition Model without introducing enforcement mechanisms or procedural workflows.
 
 Scope
 
-This authority matrix applies to all activities related to:
+This matrix applies to authority allocation across governance-relevant activities within Prospera OS v0.2.
 
-Architecture and system design
+It does not define enforcement actions, escalation procedures, implementation processes, or phase-specific activation rules.
 
-Governance rule definition
-
-Documentation production
-
-Code generation and modification
-
-Review, validation, and release decisions
-
-Operational and maintenance tasks
-
-This document does not define implementation procedures or tooling behavior.
+Authority semantics and role definitions are inherited from the Authority Definition Model v0.2.
 
 Authority Levels
 
-Authority is classified into three explicit levels.
+The following authority levels are used in this matrix.
 
-3.1 Decision Authority
+Allowed
 
-The power to make binding decisions that affect system direction, constraints, or acceptance.
+The role may perform the authority action within defined constraints and accountability boundaries.
 
-3.2 Execution Authority
+Restricted
 
-The permission to perform work, generate artifacts, or execute predefined actions.
+The role may perform the authority action only under explicit conditions, supervision, or upstream authorization.
 
-3.3 Review Authority
+Prohibited
 
-The responsibility to validate, approve, or reject outputs before they become authoritative.
+The role is not permitted to perform the authority action under any circumstance.
 
-Role Definitions
+Non-Delegable
 
-The following roles are recognized within this matrix.
+The authority action must exist but may not be delegated to this role, including any form of automation or AI execution.
+
+Authority Types
+
+The matrix applies to the following authority types.
+
+Decision Authority
+
+Execution Authority
+
+Review Authority
+
+Override Authority
+
+Authority Roles
+
+The matrix applies to the following authority roles.
 
 Human Architect
 
-Human Engineer
+Human Reviewer
 
-Governance Body
+AI Assistant
 
-AI System
+AI Executor
 
-Each role may hold different authority levels depending on the activity domain.
+Authority Level Matrix
 
-Authority Allocation Matrix
+Decision Authority
 
-5.1 Architecture and System Design
+Human Architect: Non-Delegable
 
-Decision Authority: Human Architect
+Human Reviewer: Restricted
 
-Execution Authority: AI System (Assistive), Human Engineer
+AI Assistant: Prohibited
 
-Review Authority: Human Architect, Governance Body
+AI Executor: Prohibited
 
-AI may propose structures but may not define or finalize architecture.
+Execution Authority
 
-5.2 Governance Rule Definition
+Human Architect: Allowed
 
-Decision Authority: Governance Body
+Human Reviewer: Restricted
 
-Execution Authority: Human Architect
+AI Assistant: Restricted
 
-Review Authority: Governance Body
+AI Executor: Allowed
 
-AI participation is prohibited beyond advisory input.
+Review Authority
 
-5.3 Documentation Generation
+Human Architect: Restricted
 
-Decision Authority: Human Engineer
+Human Reviewer: Non-Delegable
 
-Execution Authority: AI System (Assistive)
+AI Assistant: Restricted
 
-Review Authority: Human Engineer
+AI Executor: Prohibited
 
-AI may generate drafts but holds no ownership over content validity.
+Override Authority
 
-5.4 Code Generation and Modification
+Human Architect: Non-Delegable
 
-Decision Authority: Human Engineer
+Human Reviewer: Restricted
 
-Execution Authority: AI System (Assistive), Human Engineer
+AI Assistant: Prohibited
 
-Review Authority: Human Engineer
+AI Executor: Prohibited
 
-AI-generated code is treated as untrusted until reviewed.
+Interpretation Rules
 
-5.5 Review and Validation
+Authority levels are evaluated per authority type and role combination.
 
-Decision Authority: Human Engineer
+Non-Delegable indicates mandatory human ownership and accountability.
 
-Execution Authority: Human Engineer
+Restricted indicates conditional permission subject to external governance specifications.
 
-Review Authority: Human Engineer, Governance Body (when applicable)
+Prohibited indicates absence of authority under all conditions.
 
-AI may support analysis but may not approve outcomes.
+No authority may be inferred implicitly from access, capability, or automation level.
 
-5.6 Release and Deployment
+Relationship to Other Governance Documents
 
-Decision Authority: Governance Body
+This matrix allocates authority levels using the semantics defined in the Authority Definition Model v0.2.
 
-Execution Authority: Human Engineer
+It does not define enforcement triggers or escalation behavior, which are specified in Enforcement and Escalation Rules.
 
-Review Authority: Governance Body
+Phase-based applicability is defined by the Engineering Phase Boundary Specification.
 
-AI participation is prohibited.
+This matrix must be referenced by the Governance Index for authoritative interpretation.
 
-5.7 Operational Monitoring and Maintenance
+Extended Description
 
-Decision Authority: Human Engineer
+This document formalizes authority allocation for Prospera OS v0.2 using a four-level governance model.
 
-Execution Authority: AI System (Restricted), Human Engineer
+It is intended to prevent authority ambiguity, AI authority drift, and unintended delegation.
 
-Review Authority: Human Engineer
-
-AI operation must remain within predefined constraints.
-
-Authority Conflict Resolution
-
-When authority conflicts arise:
-
-Decision Authority supersedes Execution Authority
-
-Human authority supersedes AI authority in all cases
-
-Governance Body rulings override individual roles
-
-Ambiguity defaults to escalation, not automation
-
-No AI system may resolve authority conflicts independently.
-
-Enforcement Rules
-
-All systems and processes must enforce this authority matrix.
-
-Violations include:
-
-AI acting beyond assigned execution scope
-
-AI outputs treated as decisions
-
-Missing human review for AI-assisted artifacts
-
-Implicit delegation of authority to AI
-
-Any violation invalidates the affected output.
-
-Audit and Traceability Requirements
-
-Every authoritative action must be traceable to:
-
-A specific human role
-
-A defined authority level
-
-An auditable decision point
-
-AI involvement must be explicitly recorded when present.
-
-Versioning
-
-This matrix is aligned with Governance Formalization v0.2.
-
-Updates must not reduce human authority or expand AI authority without explicit governance approval.
+Misinterpretation or extension beyond its defined scope constitutes a governance interpretation error.
 
 File Location
 
-governance/governance-formalization/authority-level-matrix-v0.2.md
+governance/governance-formalization/AUTHORITY_LEVEL_MATRIX-v0.2.md
 
 ────────────────────────────────────────
 End of Document
