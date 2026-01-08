@@ -1,36 +1,79 @@
 AI-Governed Software Engineering
+
+Reference Engineering Whitepaper & Playbook
+
+Status: Draft
+Whitepaper Version: v0.1
+Repository Role: Reference (Non-Authoritative)
+
 Repository Role
 
-This repository is a reference implementation and engineering whitepaper demonstrating concepts and methodologies for AI-governed software engineering.
+This repository is a reference engineering whitepaper and methodology playbook demonstrating concepts and practices for AI-governed software engineering.
 
 It is not a source of governance authority.
 
-All canonical governance definitions, interpretation rules, and semantic baselines are defined exclusively in the prospera-os repository.
+All canonical governance definitions, semantic baselines, execution constraints, and authority rules are defined exclusively in:
+
+Prospera OS
+https://github.com/ccktaiwan/prospera-os
+
+Any interpretation of governance, authority, or execution that conflicts with Prospera OS is invalid by definition.
 
 Authority Boundary
 
-Authority Boundary Statement:
-This repository provides reference materials, engineering playbooks, and explanatory documentation for governed AI-assisted software engineering. It does not define system authority, governance rules, or execution constraints. Canonical governance and execution definitions reside exclusively in the prospera-os repository.
+Authority Boundary Statement
+
+This repository provides:
+
+Reference engineering materials
+
+Architecture and governance playbooks
+
+Explanatory documentation and case studies
+
+It does not:
+
+Define system authority
+
+Define governance rules
+
+Define execution constraints
+
+Override or reinterpret Prospera OS
+
+Canonical governance and execution authority resides only in the Prospera OS repository.
 
 Overview
 
-This repository contains an engineering whitepaper and playbook describing how large language models such as GPT and Codex can be governed across a five-phase software development model.
+This repository documents an alternative approach to modern software engineering:
 
-Rather than focusing on code generation, this work examines how AI can be applied to:
+Governance-first, architecture-first engineering, with AI treated as a governed participant, not an autonomous actor.
 
-Architecture definition
+Rather than focusing on code generation, this work examines how large language models (e.g. GPT, Codex-class systems) can responsibly support activities traditionally handled by senior engineering and architecture teams, including:
 
-Boundary setting
+Problem framing
 
-Governance and review
+System boundary definition
 
-These activities are traditionally performed by senior engineering and architecture teams.
+Architectural reasoning
+
+Governance and review preparation
+
+This work intentionally shifts AI usage upstream, away from pure implementation.
 
 Motivation
 
-Most software organizations operate primarily in the implementation phase.
+Most software organizations operate almost entirely in the implementation phase.
 
-Architecture and governance are often skipped due to time pressure, organizational constraints, or lack of clear authority. This commonly leads to recurring problems:
+Architecture definition, boundary setting, and governance are often skipped due to:
+
+Time pressure
+
+Organizational constraints
+
+Lack of clear authority
+
+This commonly results in:
 
 Persistent debugging cycles
 
@@ -38,7 +81,78 @@ Architectural drift
 
 Increasing long-term maintenance cost
 
-This repository documents an alternative approach: governance-first, architecture-first software engineering, with AI used as a governed participant rather than an autonomous actor.
+Fragile systems that do not scale
+
+This repository documents a governance-first alternative, where:
+
+Architecture precedes implementation
+
+Governance precedes automation
+
+AI participation is bounded, reviewable, and accountable
+
+The Five-Phase Engineering Model
+
+This work uses a five-phase software engineering model:
+
+Problem Framing
+
+Architecture & Boundary Definition
+
+Governance & Review
+
+Implementation
+
+Long-Term Evolution
+
+Most AI-assisted development focuses narrowly on Phase 4.
+
+This repository focuses on Phases 1 and 2, and partially Phase 3, where architectural and governance leverage is highest.
+
+Core Contributions
+
+This repository:
+
+Defines AI as a governed participant within an engineering system
+
+Explains why most AI-assisted development fails at organizational scale
+
+Demonstrates how governance-first methods reduce architectural entropy
+
+Shows how a single architect, assisted by AI, can perform work traditionally requiring large senior teams
+
+Case Study: Prospera OS
+
+Prospera OS is used as a live, evolving case study to demonstrate:
+
+Architecture-first system definition
+
+Explicit governance before implementation
+
+Full-system auditing and normalization
+
+Cross-repository authority alignment
+
+All case study artifacts were produced incrementally, with explicit versioning, review, and correction.
+
+Prospera OS remains the sole canonical authority.
+This repository documents the method, not the system.
+
+What This Repository Is Not
+
+This repository is not:
+
+A SaaS product
+
+An autonomous AI system
+
+A prompt collection
+
+A coding tutorial
+
+An execution framework
+
+It is an engineering methodology and governance playbook.
 
 Recommended Reading Order
 
@@ -48,55 +162,11 @@ RELEASES.md — version scope and boundaries
 
 governance/governance-formalization/governance-index-v0.2.md
 
-The Five-Phase Engineering Model
-
-Problem Framing
-
-Architecture and Boundary Definition
-
-Governance and Review
-
-Implementation
-
-Long-term Evolution
-
-This work focuses on how AI can responsibly support Phases 1 and 2, not only Phase 4.
-
-Core Contributions
-
-Defines AI as a governed participant within an engineering system
-
-Explains why most AI-assisted development fails at scale
-
-Demonstrates how one architect, assisted by AI, can perform work traditionally requiring large senior engineering teams
-
-Case Study
-
-Prospera OS is used as a live case study to demonstrate:
-
-Architecture-first development
-
-Explicit governance before implementation
-
-Full-system auditing and normalization
-
-All artifacts were produced incrementally, with explicit versioning and review.
-
-What This Repository Is Not
-
-A SaaS product
-
-A prompt collection
-
-A coding tutorial
-
-This repository presents an engineering methodology and governance playbook, not an execution system.
-
 Status
 
 Development Status: Active
-
-Whitepaper Version: v0.1 (Draft)
+Whitepaper Status: Draft
+Backward Compatibility: Not guaranteed
 
 License
 
